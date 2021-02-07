@@ -1,0 +1,74 @@
+
+Task : 01
+#include <stdio.h>
+#define size 50
+int main() {
+    int n, i;
+    float num[size], sum = 0.0, avg;
+
+    printf("Enter the numbers of elements: ");
+    scanf("%d", &n);
+
+    while (n > 50 || n < 1) {
+        printf("Error! number should in range of (1 to 100).\n");
+        printf("Enter the number again: ");
+        scanf("%d", &n);
+    }
+
+    for (i = 0; i < n; ++i) {
+        printf("%d. Enter number: ", i + 1);
+        scanf("%f", &num[i]);
+        sum += num[i];
+    }
+
+    avg = sum / n;
+    printf("Average = %.2f", avg);
+    return 0;
+}
+
+Task :02
+
+ #include <conio.h>
+ 
+ 
+int main()
+{
+    int a[1000],i,n,min,max;
+   
+    printf("Enter size of the array : ");
+    scanf("%d",&n);
+ 
+    printf("Enter elements in array : ");
+    for(i=0; i<n; i++)
+    {
+        scanf("%d",&a[i]);
+    }
+ 
+    min=max=a[0];
+    for(i=1; i<n; i++)
+    {
+         if(min>a[i])
+		  min=a[i];   
+		   if(max<a[i])
+		    max=a[i];       
+    }
+     printf("minimum of array is : %d",min);
+          printf("\nmaximum of array is : %d",max);
+ 
+ 
+    return 0;
+}
+
+
+Task :03
+#include <stdio.h>
+int main()
+{
+    char firstname[20], lastname[20];
+    printf("Input your firstname: ");
+    scanf("%s", firstname);
+    printf("Input your lastname: ");
+    scanf("%s", lastname);
+    printf("%s %s \n", firstname, lastname);
+    return 0;
+}
