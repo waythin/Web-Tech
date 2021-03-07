@@ -7,7 +7,7 @@
     <title>Lab Task</title>
 </head>
 <body>
-    
+<from>
     <table>
 <tr>
     <td>Name</td>
@@ -54,6 +54,7 @@ Gender<br>
 
  <input type="submit" value="SUBMIT">
  <input type="reset" placeorder="RESET">
+    </from>
 
 
 </body>
